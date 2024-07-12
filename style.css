@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1605774337664-7a846e9cdf17?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.dashboard {
+    width: 1300px;
+    height: 600px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.devices {
+    padding: 20px;
+    display: flex;
+}
+
+.box1 {
+    width: 270px;
+    height: 300px;
+    border-radius: 20px;
+    position: relative;
+    margin: 120px 10px 0px 20px;
+}
+
+h5 {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
+}
+
+.cloudy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+
+.cloudy img {
+    width: 25px;
+    height: 25px;
+}
+
+strong {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px gray;
+    padding: 10px 20px;
+    position: relative;
+    margin: 40px;
+    flex-basis: 10%;
+}
+
+p {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box img {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 27px;
+    left: 120px;
+}
+
+.box img.bulb1 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 120px;
+}
+.box img.bulb2 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 120px;
+}
+.box img.fan-1 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 120px;
+}
+.box img.fan-2 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 120px;
+}
+.box img.fan-2 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 120px;
+}
+
+.box img.lamp {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 120px;
+}
+.box img.speak {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 120px;
+}
+
+.box img.air_conditioner {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+}
+.box img.tv {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+}
+
+/* toggle */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin: 25px 30px 0px 30px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
